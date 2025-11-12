@@ -1,5 +1,5 @@
 {
-  "name": "my-portfolio",
+  "name": "yanglesh-portfolio",
   "version": "1.0.0",
   "description": "A modern, responsive, and interactive **personal portfolio website** designed to highlight professional achievements, technical expertise, and creative projects in **Data Analytics, Software Development, and Business Intelligence**.",
   "main": "config-template.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yanglesh5139/my-portfolio.git"
+    "url": "git+https://github.com/Yanglesh5139/yanglesh-portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yanglesh5139/my-portfolio/issues"
+    "url": "https://github.com/Yanglesh5139/yanglesh-portfolio/issues"
   },
-  "homepage": "https://github.com/Yanglesh5139/my-portfolio#readme"
+  "homepage": "https://github.com/Yanglesh5139/yanglesh-portfolio#readme"
 }
