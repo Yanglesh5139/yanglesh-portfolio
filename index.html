@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanglesh - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/req_docs/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <!-- need to add own photo here (change) -->
+        <figure class="avatar-box">
+          <img src="./assets/req_docs/Profile_pic.png" alt="Yanglesh Jaiswal" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yanglesh Jaiswal">Yanglesh Jaiswal</h1>
+
+          <p class="title">Data Analyst</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jaiswalyanglesh11@gmail.com" class="contact-link">jaiswalyanglesh11@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+393935524408" class="contact-link">+39 393 9524408</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1998-03-05">March 5, 1998</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Palermo, Italy</address>
+            </div>
+
+          </li>
+
+        </ul>
+        <!-- i have to add logos of linked in and github here (change)-->
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/yanglesh-jaiswal/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/jaiswalyanglesh11/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+          <!-- <li class="navbar-item theme-toggle-item">
+      <button class="navbar-link theme-toggle" data-theme-toggle>
+        <ion-icon name="moon"></ion-icon>
+      </button>
+    </li> -->
+          <!-- In your navbar -->
+          <!-- Theme toggle button with SVG icons -->
+          <li class="navbar-item theme-toggle-item">
+            <button class="navbar-link theme-toggle" data-theme-toggle>
+              <!-- Sun SVG for dark mode -->
+              <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+                  stroke="currentColor" stroke-width="2" />
+                <path d="M12 1V3" stroke="currentColor" stroke-width="2" />
+                <path d="M12 21V23" stroke="currentColor" stroke-width="2" />
+                <path d="M4.22 4.22L5.64 5.64" stroke="currentColor" stroke-width="2" />
+                <path d="M18.36 18.36L19.78 19.78" stroke="currentColor" stroke-width="2" />
+                <path d="M1 12H3" stroke="currentColor" stroke-width="2" />
+                <path d="M21 12H23" stroke="currentColor" stroke-width="2" />
+                <path d="M4.22 19.78L5.64 18.36" stroke="currentColor" stroke-width="2" />
+                <path d="M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" />
+              </svg>
+
+              <!-- Moon SVG for light mode -->
+              <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 12.79C20.8427 14.4922 20.2039 16.1144 19.1582 17.4668C18.1126 18.8192 16.7035 19.8458 15.0957 20.4265C13.4879 21.0073 11.748 21.1181 10.0795 20.7461C8.41104 20.3741 6.88299 19.5345 5.67422 18.3258C4.46545 17.117 3.62593 15.589 3.2539 13.9205C2.88187 12.252 2.99274 10.5121 3.57348 8.9043C4.15423 7.29651 5.18085 5.88737 6.53323 4.84175C7.88562 3.79614 9.50782 3.15731 11.21 3C10.2134 4.34827 9.73385 6.00945 9.85849 7.68141C9.98314 9.35338 10.7039 10.9251 11.8894 12.1106C13.0749 13.2961 14.6466 14.0169 16.3186 14.1415C17.9906 14.2662 19.6517 13.7866 21 12.79Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a Master’s student in Management Engineering with a background in software and data engineering. Over
+            the past 3 years, I’ve worked on building data pipelines, automating ETL processes, and developing
+            dashboards using Python, SQL, and Power BI. I’m familiar with cloud technologies like Azure and AWS, and I
+            enjoy turning complex datasets into insights that support better business decisions. Currently exploring
+            data analytics and business intelligence opportunities in multinational companies.
+          </p>
+        </section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/req_docs/madhav.jpeg" alt="Madhavaraj M" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Madhavaraj M</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I have worked closely with Yanglesh in my capacity as a Product Manager. He has been an integral
+                    part
+                    of the Data Engineering team, consistently demonstrating strong technical expertise and
+                    problem-solving skills. Even though he was part of a team filled with senior developers, he stood
+                    out as the go-to person for many team members and was truly a pivotal part of our success. His
+                    ability to break down complex problems and determine the most effective technical approach sets him
+                    apart from the crowd.
+
+                    Beyond his technical proficiency, Yanglesh has shown excellent collaboration and ownership, often
+                    going the extra mile to support his teammates and ensure project success. His positive attitude and
+                    approachable nature made him a pleasure to work with. I firmly believe he will be an asset to any
+                    team he joins.
+
+                    It has been a pleasure working with Yanglesh, and I am confident that he will continue to excel in
+                    all his future endeavors.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/req_docs/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I have worked closely with Yanglesh in my capacity as a Product Manager. He has been an integral
+                    part
+                    of the Data Engineering team, consistently demonstrating strong technical expertise and
+                    problem-solving skills. Even though he was part of a team filled with senior developers, he stood
+                    out as the go-to person for many team members and was truly a pivotal part of our success. His
+                    ability to break down complex problems and determine the most effective technical approach sets him
+                    apart from the crowd.
+
+                    Beyond his technical proficiency, Yanglesh has shown excellent collaboration and ownership, often
+                    going the extra mile to support his teammates and ensure project success. His positive attitude and
+                    approachable nature made him a pleasure to work with. I firmly believe he will be an asset to any
+                    team he joins.
+
+                    It has been a pleasure working with Yanglesh, and I am confident that he will continue to excel in
+                    all his future endeavors.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/req_docs/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/req_docs/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/req_docs/madhav.jpeg" alt="Madhavaraj M" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/req_docs/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Madhavaraj M</h4>
+
+              <time datetime="2025-10-30">30 October, 2025</time>
+
+              <div data-modal-text>
+                <p>
+                  I have worked closely with Yanglesh in my capacity as a Product Manager. He has been an integral part
+                  of the Data Engineering team, consistently demonstrating strong technical expertise and
+                  problem-solving skills. Even though he was part of a team filled with senior developers, he stood
+                  out as the go-to person for many team members and was truly a pivotal part of our success. His
+                  ability to break down complex problems and determine the most effective technical approach sets him
+                  apart from the crowd.
+
+                  Beyond his technical proficiency, Yanglesh has shown excellent collaboration and ownership, often
+                  going the extra mile to support his teammates and ensure project success. His positive attitude and
+                  approachable nature made him a pleasure to work with. I firmly believe he will be an asset to any
+                  team he joins.
+
+                  It has been a pleasure working with Yanglesh, and I am confident that he will continue to excel in
+                  all his future endeavors.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Università degli Studi di Palermo, Italy</h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                Currently pursuing a Master’s in Management Engineering at the University of Palermo, Italy, focusing on
+                business analytics, operations management, and data-driven decision-making.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Institute of Technology Rourkela, India</h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                Earned a Bachelor of Technology in Computer Science and Engineering from NIT Rourkela, developing strong
+                skills in software development, data structures, and analytical problem-solving.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">City Montessori Inter College Lucknow, India</h4>
+
+              <span>2015 — 2017</span>
+
+              <p class="timeline-text">
+                Completed high school education with a focus on science, mathematics along with Economics, laying a
+                strong foundation for future studies in engineering, technology and Business.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Publicis Sapient (TLG India Pvt Ltd)</h4>
+
+              <span>2022 — 2025</span>
+
+              <ul class="timeline-text">
+                <ul>
+                  <li>
+                    Designed and implemented an optimized data-loading process enabling a
+                    <strong>“one read and one write”</strong> architecture to ingest data from multiple
+                    sources into target tables across layers — minimizing redundant reads/writes
+                    and significantly improving data-loading performance.
+                  </li>
+                  <li>
+                    Performed comprehensive <strong>data quality (QA) validations</strong> using a unified
+                    framework to ensure accuracy, consistency, and reliability of analytical outputs
+                    across environments.
+                  </li>
+                  <li>
+                    Developed and deployed automated scripts for a unified batch handler to streamline
+                    data movement into <em>silver, refined,</em> and <em>gold</em> layers within
+                    <strong>Snowflake</strong>, improving maintainability and process standardization.
+                  </li>
+                  <li>
+                    Built an <strong>automated ETL testing framework</strong> that reduced manual testing time
+                    and enhanced data accuracy; subsequently adopted organization-wide as the standard
+                    for ETL validation.
+                  </li>
+                </ul>
+
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Netcamp Solutions Pvt Ltd</h4>
+              <span>2022</span>
+              <p class="timeline-text">
+                Contributed to the design and development of a mailing system implementing SMTP and POP for efficient
+                email communication and management.
+              </p>
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="folder-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vendor Sales and Inventory Analytics</h4>
+
+              <a href="https://github.com/Yanglesh5139/vendor_analysis_sales_and_inventory" class="project-link"
+                target="_blank">Project Link</a>
+
+              <p class="timeline-text">
+                Designed and implemented an end-to-end business analytics solution to evaluate liquor sales and
+                inventory performance across multiple vendors and brands. Utilized Python for data filtering,
+                transformation, and automation, integrating log tracking and exception handling to ensure data accuracy
+                and reliability throughout the workflow. Built optimized SQL queries and data pipelines to aggregate and
+                analyze large datasets efficiently. Developed an interactive dashboard to visualize key business
+                metrics, uncovering insights such as high-sales but low-margin brands, low-sales but high-margin
+                products, and top-performing vendors. The analysis enabled data-driven decisions for pricing strategies,
+                discount planning, and inventory optimization, aligning business objectives with operational efficiency.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Hospitality Management System Dashboard</h4>
+
+              <a href="https://github.com/Yanglesh5139/Hospitality-Analytics" class="project-link"
+                target="_blank">Project Link</a>
+
+              <p class="timeline-text">
+                Developed a comprehensive Power BI dashboard to monitor and analyze three months of booking data across
+                premier and business hotels in multiple Indian cities. Implemented data cleaning, filtering, and metrics
+                calculations to ensure accurate reporting of KPIs such as Average Daily Rate (ADR), Occupancy %, and
+                revenue metrics. The solution provided actionable insights for hotel management to track performance,
+                identify trends, and make data-driven decisions to optimize occupancy, pricing, and overall operational
+                efficiency.
+              </p>
+
+
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Banking Sector Performance Dashboard</h4>
+
+              <a href="https://github.com/Yanglesh5139/banking-service/tree/main" class="project-link"
+                target="_blank">Project Link</a>
+
+              <p class="timeline-text">
+                Developed a multi-page Power BI dashboard leveraging SQL for data extraction and modeling to analyze key
+                financial indicators across various banking sectors. The project consolidated large datasets on
+                deposits, borrowings, and foreign reserves, enabling performance tracking and comparative analysis among
+                different banking divisions. Applied data cleaning, transformation, and DAX-based metric calculations to
+                ensure data accuracy and consistency. The dashboard provided strategic insights into financial trends,
+                helping stakeholders make data-driven decisions regarding capital allocation, lending strategies, and
+                liquidity management.
+              </p>
+
+
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Supply Chain Analytics Automation</h4>
+
+              <!-- <a href="abc.com" class="project-link" target="_blank">Project Link</a> -->
+
+              <p class="timeline-text">
+                Developed an automated supply chain analytics workflow integrating n8n for process orchestration and
+                Quadratic AI for data cleaning and transformation. Designed a pipeline that automatically extracts
+                supply chain data from emails, stores it in a MySQL database, and processes it for performance analysis
+                and reporting. Implemented data validation and transformation logic to ensure accuracy and readiness for
+                analytics. The solution streamlined manual data handling, improved data reliability and processing
+                speed, and provided real-time visibility into key supply chain metrics, supporting data-driven
+                operational decisions.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Skills
+      -->
+
+      <article class="Skills" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="skills">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Skills</h3>
+          </div>
+
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Programming</button></li>
+            <li class="filter-item"><button data-filter-btn>Data & Analytics</button></li>
+            <li class="filter-item"><button data-filter-btn>Tools</button></li>
+            <li class="filter-item"><button data-filter-btn>Cloud Computing</button></li>
+            <li class="filter-item"><button data-filter-btn>Visualization</button></li>
+            <li class="filter-item"><button data-filter-btn>AI Tools</button></li>
+            <li class="filter-item"><button data-filter-btn>Others</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Programming</button></li>
+              <li class="select-item"><button data-select-item>Data & Analytics</button></li>
+              <li class="select-item"><button data-select-item>Tools</button></li>
+              <li class="select-item"><button data-select-item>Cloud Computing</button></li>
+              <li class="select-item"><button data-select-item>Visualization</button></li>
+              <li class="select-item"><button data-select-item>AI Tools</button></li>
+              <li class="select-item"><button data-select-item>Others</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Programming Languages -->
+            <li class="project-item active" data-filter-item data-category="programming">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/java.jpg" alt="Java Icon">
+                </figure>
+                <h3 class="project-title">Java</h3>
+                <p class="project-category">Programming</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="programming">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/python.jpg" alt="Python Icon">
+                </figure>
+                <h3 class="project-title">Python</h3>
+                <p class="project-category">Programming</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="programming">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/c++.png" alt="C++ Icon">
+                </figure>
+                <h3 class="project-title">C++</h3>
+                <p class="project-category">Programming</p>
+              </a>
+            </li>
+
+            <!-- Data & Analytics -->
+            <li class="project-item active" data-filter-item data-category="data & analytics">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/pyspark.jpg" alt="PySpark Icon">
+                </figure>
+                <h3 class="project-title">PySpark</h3>
+                <p class="project-category">Data & Analytics</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="data & analytics">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/sql.png" alt="SQL Database Icon">
+                </figure>
+                <h3 class="project-title">SQL Database</h3>
+                <p class="project-category">Data & Analytics</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="data & analytics">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/snowflake.png" alt="Snowflake Icon">
+                </figure>
+                <h3 class="project-title">Snowflake</h3>
+                <p class="project-category">Data & Analytics</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="data & analytics">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/databricks.png" alt="DataBricks Icon">
+                </figure>
+                <h3 class="project-title">Databricks</h3>
+                <p class="project-category">Data & Analytics</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="data & analytics">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/orange.png" alt="Orange Icon">
+                </figure>
+                <h3 class="project-title">Orange</h3>
+                <p class="project-category">Data & Analytics</p>
+              </a>
+            </li>
+
+            <!-- Tools -->
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/jira.png" alt="Jira Icon">
+                </figure>
+                <h3 class="project-title">Jira</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/rally.png" alt="Rally Icon">
+                </figure>
+                <h3 class="project-title">Rally</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/git.png" alt="Git Icon">
+                </figure>
+                <h3 class="project-title">Git</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/jenkins.png" alt="Jenkins Icon">
+                </figure>
+                <h3 class="project-title">Jenkins</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/docker.png" alt="Docker Icon">
+                </figure>
+                <h3 class="project-title">Docker</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/springboot.png" alt="Spring Boot Icon">
+                </figure>
+                <h3 class="project-title">Spring Boot</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/kubernetes.png" alt="Kubernetes Icon">
+                </figure>
+                <h3 class="project-title">Kubernetes</h3>
+                <p class="project-category">Tools</p>
+              </a>
+
+              <!-- cloud computing -->
+            <li class="project-item active" data-filter-item data-category="cloud computing">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/azure cloud.png" alt="Azure Cloud Icon">
+                </figure>
+                <h3 class="project-title">Azure Cloud</h3>
+                <p class="project-category">Cloud Computing</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="cloud computing">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/aws.png" alt="AWS Icon">
+                </figure>
+                <h3 class="project-title">AWS</h3>
+                <p class="project-category">Cloud Computing</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="cloud computing">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/big query.png" alt="BigQuery Icon">
+                </figure>
+                <h3 class="project-title">BigQuery</h3>
+                <p class="project-category">Cloud Computing</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="cloud computing">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/azure_data_factory.png" alt="Azure Data Factory Icon">
+                </figure>
+                <h3 class="project-title">Azure Data Factory</h3>
+                <p class="project-category">Cloud Computing</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="cloud computing">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/data-lake-analytics.jpg" alt="Azure Data Lake Icon">
+                </figure>
+                <h3 class="project-title">Azure Data Lake</h3>
+                <p class="project-category">Cloud Computing</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="cloud computing">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/azure_devops.png" alt="Azure DevOps Icon">
+                </figure>
+                <h3 class="project-title">Azure DevOps</h3>
+                <p class="project-category">Cloud Computing</p>
+              </a>
+            </li>
+
+            <!-- Visualization -->
+            <li class="project-item active" data-filter-item data-category="visualization">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/powerbi.png" alt="Power BI Icon">
+                </figure>
+                <h3 class="project-title">Power BI</h3>
+                <p class="project-category">Visualization</p>
+              </a>
+            </li>
+
+            <!-- AI Tools  -->
+            <li class="project-item active" data-filter-item data-category="ai tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/quadratics.jpg" alt="Quadratic AI Icon">
+                </figure>
+                <h3 class="project-title">Quadratic AI</h3>
+                <p class="project-category">AI Tools</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="ai tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/n8n.png" alt="n8n Icon">
+                </figure>
+                <h3 class="project-title">n8n</h3>
+                <p class="project-category">AI Tools</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="ai tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/copilot.jpg" alt="Copilot Icon">
+                </figure>
+                <h3 class="project-title">Copilot</h3>
+                <p class="project-category">AI Tools</p>
+              </a>
+            </li>
+            <!-- Others  -->
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/excel.png" alt="Microsoft Excel Icon">
+                </figure>
+                <h3 class="project-title">Microsoft Excel</h3>
+                <p class="project-category">Others</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/power point.jpg" alt="Microsoft PowerPoint Icon">
+                </figure>
+                <h3 class="project-title">Microsoft PowerPoint</h3>
+                <p class="project-category">Others</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/ms project.png" alt="Microsoft Project Icon">
+                </figure>
+                <h3 class="project-title">Microsoft Project</h3>
+                <p class="project-category">Others</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/business analysis.jpg" alt="Business Analysis Icon">
+                </figure>
+                <h3 class="project-title">Business Analysis</h3>
+                <p class="project-category">Others</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/agile.png" alt="Agile Scrum Icon">
+                </figure>
+                <h3 class="project-title">Agile Scrum</h3>
+                <p class="project-category">Others</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/ETL.png" alt="ETL Icon">
+                </figure>
+                <h3 class="project-title">ETL</h3>
+                <p class="project-category">Others</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="others">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/req_docs/vscode.jpg" alt="VsCode Icon">
+                </figure>
+                <h3 class="project-title">Microsoft VS Code</h3>
+                <p class="project-category">Others</p>
+              </a>
+
+          </ul>
+
+        </section>
+        <section class="languages">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="language-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Languages</h3>
+          </div>
+
+          <ul class="language-list">
+            <li class="language-item">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+              <span>English</span>
+            </li>
+            <li class="language-item">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+              <span>Italian</span>
+            </li>
+            <li class="language-item">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+              <span>Nepali</span>
+            </li>
+            <li class="language-item">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+              <span>Hindi</span>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="portfolio-section">
+          <ul class="portfolio-list">
+            <!-- Portfolio Album 1 -->
+            <li class="portfolio-item" data-id="p1">
+              <a href="#" class="portfolio-link" data-open-album>
+                <figure class="portfolio-banner">
+                  <img src="./assets/req_docs/Hospitality_Homepage.png" alt="image: Homepage" class="deck-img"
+                    data-index="0">
+                  <img src="./assets/req_docs/Hospitality_toolTip_view.png" alt="image: Tooltip View" class="deck-img"
+                    data-index="1">
+                  <img src="./assets/req_docs/Hospitality_tooltip view with filters.png"
+                    alt="image: Tooltip View with Filters" class="deck-img" data-index="2">
+                  <div class="deck-overlay">
+                    <span class="deck-count">3 photos</span>
+                  </div>
+                </figure>
+
+                <div class="portfolio-content">
+                  <h3 class="h3 portfolio-title">Hospitality</h3>
+                  <p class="portfolio-text">
+                    Interactive Power BI dashboard analyzing hotel room booking trends, occupancy rates, and revenue
+                    performance across multiple cities.
+                  </p>
+                  <a href="https://github.com/Yanglesh5139/Hospitality-Analytics/tree/main" target="_blank"
+                    class="project-link">
+                    🔗 Project Link
+                  </a>
+                </div>
+
+              </a>
+            </li>
+
+            <!-- Portfolio Album 2 -->
+            <li class="portfolio-item" data-id="p2">
+              <a href="#" class="portfolio-link" data-open-album>
+                <figure class="portfolio-banner">
+                  <img src="./assets/req_docs/vendor_sales_analysis_home.png"
+                    alt="Cover: Vendor Sales Analysis Home_page" class="deck-img" data-index="0">
+                  <img src="./assets/req_docs/vendor_sales_analysis_sales_dark_mood.png" alt="Image:sales_dark_mood"
+                    class="deck-img" data-index="1">
+                  <img src="./assets/req_docs/vendor_sales_analysis_sales_light_mood.png" alt="Image:sales_light_mood"
+                    class="deck-img" data-index="2">
+                  <img src="./assets/req_docs/vendor_sales_analysis_vendor.png" alt="Image:vendor" class="deck-img"
+                    data-index="3">
+                  <img src="./assets/req_docs/vendor_sales_analysis_clustered_bar_chart.png"
+                    alt="Image:clustered_bar_chart" class="deck-img" data-index="4">
+                  <img src="./assets/req_docs/vendor_sales_analysis_confidence_intervals.png"
+                    alt="Image:confidence_intervals" class="deck-img" data-index="5">
+                  <img src="./assets/req_docs/vendor_sales_analysis_correlation_heatmap.png"
+                    alt="Image:correlation_heatmap" class="deck-img" data-index="6">
+                  <img src="./assets/req_docs/vendor_sales_analysis_donut_chart.png" alt="Image:donut_chart"
+                    class="deck-img" data-index="7">
+                  <img src="./assets/req_docs/vendor_sales_analysis_funnel_chart.png" alt="Image:funnel_chart"
+                    class="deck-img" data-index="8">
+                  <img src="./assets/req_docs/vendor_sales_analysis_histplot.png" alt="Image:histplot" class="deck-img"
+                    data-index="9">
+                  <img src="./assets/req_docs/vendor_sales_analysis_homepage.png" alt="Image:homepage" class="deck-img"
+                    data-index="10">
+                  <img src="./assets/req_docs/vendor_sales_analysis_purchase_contribution.png"
+                    alt="Image:purchase_contribution" class="deck-img" data-index="11">
+                  <img src="./assets/req_docs/vendor_sales_analysis_purchase_contribution_overall.png"
+                    alt="Image:purchase_contribution_overall" class="deck-img" data-index="12">
+                  <img src="./assets/req_docs/vendor_sales_analysis_scatter_plot.png" alt="Image:scatter_plot"
+                    class="deck-img" data-index="13">
+                  <img src="./assets/req_docs/vendor_sales_analysis_top_brands_and_vendors.png"
+                    alt="Image:top_brands_and_vendors" class="deck-img" data-index="14">
+                  <div class="deck-overlay">
+                    <span class="deck-count">15 photos</span>
+                  </div>
+                </figure>
+
+                <div class="portfolio-content">
+                  <h3 class="h3 portfolio-title">Vendor Sales Analysis</h3>
+                  <p class="portfolio-text">Analyzing vendor efficiency and profitability to support strategic
+                    purchasing and inventory decisions using SQL, Python, and Power BI.</p>
+                  <a href="https://github.com/Yanglesh5139/vendor_analysis_sales_and_inventory" target="_blank"
+                    class="project-link">
+                    🔗 Project Link
+                  </a>
+                </div>
+              </a>
+            </li>
+
+            <!-- Portfolio Album 3 -->
+            <li class="portfolio-item" data-id="p3">
+              <a href="#" class="portfolio-link" data-open-album>
+                <figure class="portfolio-banner">
+                  <img src="./assets/req_docs/banking_Dashboard_homepage.png" alt="Image:homepage" class="deck-img"
+                    data-index="0">
+                  <img src="./assets/req_docs/banking_Dashboard_Deposit Analysis Page.png"
+                    alt="Image:Deposit Analysis Page" class="deck-img" data-index="1">
+                  <img src="./assets/req_docs/banking_Dashboard_Loan analysis page.png" alt="Image:Loan analysis page"
+                    class="deck-img" data-index="2">
+                  <img src="./assets/req_docs/banking_Dashboard_Sumamary Page.png" alt="Image:Sumamary Page"
+                    class="deck-img" data-index="3">
+                  <img src="./assets/req_docs/banking_Dashboard_Summary Page with filters.png"
+                    alt="Image:Summary Page with filters" class="deck-img" data-index="4">
+                  <div class="deck-overlay">
+                    <span class="deck-count">5 photos</span>
+                  </div>
+                </figure>
+
+                <div class="portfolio-content">
+                  <h3 class="h3 portfolio-title">Banking Dashboard</h3>
+                  <p class="portfolio-text">Power BI dashboard for banking risk analysis, helping visualize loans,
+                    deposits, and client insights for smarter financial decisions.</p>
+                  <a href="https://github.com/Yanglesh5139/banking-service" target="_blank" class="project-link">
+                    🔗 Project Link
+                  </a>
+                </div>
+              </a>
+            </li>
+
+            <!-- Portfolio item 4 -->
+            <li class="portfolio-item" data-id="p4">
+              <a href="#" class="portfolio-link" data-open-album>
+                <figure class="portfolio-banner">
+                  <img src="./assets/req_docs/Election_Home_page.png" alt="Image:Home_page" class="deck-img"
+                    data-index="0">
+                  <img src="./assets/req_docs/Election_constituency view.png" alt="Image:constituency view"
+                    class="deck-img" data-index="1">
+                  <img src="./assets/req_docs/Election_GridView.png" alt="Image:GridView" class="deck-img"
+                    data-index="2">
+                  <img src="./assets/req_docs/Election_Overview Page.png" alt="Image:Overview Page" class="deck-img"
+                    data-index="3">
+                  <img src="./assets/req_docs/Election_political landscape view.png"
+                    alt="Image:political landscape view" class="deck-img" data-index="4">
+                  <img src="./assets/req_docs/Election_State view with filters applied.png"
+                    alt="Image:State view with filters applied" class="deck-img" data-index="5">
+                  <img src="./assets/req_docs/Election_state view without filter.png"
+                    alt="Image:state view without filter" class="deck-img" data-index="6">
+                  <div class="deck-overlay">
+                    <span class="deck-count">7 photos</span>
+                  </div>
+                </figure>
+
+                <div class="portfolio-content">
+                  <h3 class="h3 portfolio-title">Election Dashboard</h3>
+                  <p class="portfolio-text">End-to-end Power BI project analyzing the 2024 Indian General Elections with
+                    Excel-based data cleaning, interactive dashboards, and data storytelling.</p>
+                  <a href="https://github.com/Yanglesh5139/general_elections_india_2024" target="_blank"
+                    class="project-link">
+                    🔗 Project Link
+                  </a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Overlay Elements -->
+      <div class="portfolio-overlay" style="display: none;">
+        <div class="overlay-stage"></div>
+        <div class="overlay-controls">
+          <button class="overlay-btn overlay-back" style="display:none;">← Back</button>
+          <button class="overlay-btn overlay-close">✕</button>
+        </div>
+        <div class="overlay-meta"></div>
+      </div>
+
+      <div class="fullscreen-view" style="display: none;">
+        <div class="fullscreen-inner">
+          <div class="fs-controls">
+            <button class="overlay-btn fs-back">← Back</button>
+            <button class="overlay-btn fs-close">✕</button>
+          </div>
+          <div class="fs-image-container">
+            <button class="nav-btn nav-left">◀</button>
+            <img src="" alt="" class="fs-img">
+            <button class="nav-btn nav-right">▶</button>
+          </div>
+          <div class="fullscreen-caption"></div>
+        </div>
+      </div>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="resume-download">
+          <h3 class="h3">Download Resume</h3>
+          <p class="Resume_description">If you’d like a copy of my resume, you can download it below:</p>
+
+
+          <a href="assets/req_docs/Yanglesh_Jaiswal_CV.pdf" download class="form-btn">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download Resume</span>
+          </a>
+        </section>
+
+        <!-- In your HTML file -->
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          
+
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+
+        
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="logger.js"></script>
+        <script src="config.js"></script>
+        <!-- <script src="contact-form.js"></script> -->
+
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
