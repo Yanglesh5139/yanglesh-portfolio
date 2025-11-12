@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Yanglesh5139/yanglesh-portfolio/issues"
   },
-  "homepage": "https://github.com/Yanglesh5139/yanglesh-portfolio#readme"
+  "homepage": "https://github.com/Yanglesh5139/yanglesh-portfolio#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
 }
