@@ -1,0 +1,17 @@
+# Configuration files with secrets
+config.js
+
+# Log files
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if any)
+node_modules/
