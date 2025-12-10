@@ -3,9 +3,7 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
+
 
 
 
@@ -447,6 +445,30 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
+  /* .social-item {
+    display: inline-block;
+    margin: 0 10px;
+  } */
+  
+  .social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+    transform: translateY(-3px);
+  }
+  
+  .social-link svg {
+    width: 20px;
+    height: 20px;
+    transition: filter 0.3s ease;
+  }
+  
+  .social-link:hover svg {
+    filter: brightness(1.2);
+  }
+
 
 
 
@@ -508,7 +530,37 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
-
+ header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .wave-hand, .greeting-hand {
+    font-size: 28px;
+    display: inline-block;
+    animation: wave 2.5s infinite;
+    transform-origin: 70% 70%;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .dynamic-greeting {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    /* Inherit color from parent - will adapt to your theme */
+    color: white;
+  }
 
 /**
  * #service 
@@ -838,6 +890,67 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  padding: 4px;
+  transition: all 0.2s ease;
+}
+
+/* Optional: Add a subtle shadow on hover */
+.logo-link:hover .company-logo {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add a tooltip effect */
+.logo-link {
+  position: relative;
+}
+
+.logo-link::after {
+  content: 'Visit website';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.logo-link:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 
@@ -2448,7 +2561,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * colors
    */
-
+  .dynamic-greeting {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    /* Inherit color from parent - will adapt to your theme */
+    color: black;
+  }
   /* gradient */
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -3994,4 +4113,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: 100 !important;
   font-size: 10px !important;   
 }
+
+
 }
