@@ -961,4 +961,31 @@ class PortfolioApp {
 
 // Initialize your portfolio app
 const portfolioApp = new PortfolioApp();
+
+function getTimeBasedGreeting() {
+    const hour = new Date().getHours();
+    if (hour >= 5 && hour < 12) return "Good morning";
+    if (hour >= 12 && hour < 17) return "Good afternoon";
+    if (hour >= 17 && hour < 21) return "Good evening";
+    return "Good night";
+  }
+  
+  function updateGreeting() {
+    const greeting = getTimeBasedGreeting();
+    const greetingElement = document.querySelector('.dynamic-greeting');
+    
+    if (greetingElement) {
+      greetingElement.style.opacity = '0';
+      setTimeout(() => {
+        // Use innerHTML to include the waving hand span
+        greetingElement.innerHTML = `Hello, ${greeting}! <span class="greeting-hand">👋</span>`;
+        greetingElement.style.opacity = '1';
+      }, 200);
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    updateGreeting();
+    setInterval(updateGreeting, 60000);
+  });
 }
